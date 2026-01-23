@@ -2,7 +2,13 @@
 
 A JSON-first fetch wrapper for standard API calls.
 
-For streaming, text, blobs, or advanced response handling, use `fetch` directly.
+## Goals
+
+1. **Reduce boilerplate** — No more repetitive `JSON.stringify`, headers, and parsing
+2. **Give more power to devs** — Full access to response, status codes, and headers
+3. **No deep abstraction** — Works like fetch, just with less ceremony
+
+**_NOTE:_** For streaming, text, blobs, or advanced response handling, use `fetch` directly.
 
 ## Why This Exists
 

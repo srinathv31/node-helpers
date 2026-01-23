@@ -52,6 +52,7 @@ const res5 = await fetch('https://api.example.com/users', {
 if (!res5.ok) {
     const errors = await res5.json() as ValidationError[];
     console.error(`Failed: ${res5.status}`, errors);
+    return;
 }
 const user1 = await res5.json() as User;
 
